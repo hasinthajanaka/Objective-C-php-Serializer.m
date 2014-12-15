@@ -10,6 +10,7 @@
 
 @interface RTSerializer : NSObject
 
--(id)deserialize:(NSString *)str;
+-(id)deserialize:(NSString *)str withStringEncoding:(NSStringEncoding)stringEncoding;
 -(NSString *)serialize:(id)object inString:(NSString *)str;
+
 @end
